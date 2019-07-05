@@ -1,12 +1,16 @@
 package com.fdorval.simpleapp.demo.rest.dto;
 
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
-
-
+/**
+ * objet résultat
+ */
 public class CoolResult {
     int pourcentage;
     String commentaire;
+
+    public CoolResult(){
+
+    }
 
     public CoolResult(int coolScore, String commentaire) {
         this.pourcentage = coolScore;

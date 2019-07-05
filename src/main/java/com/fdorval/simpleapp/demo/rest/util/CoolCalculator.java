@@ -3,6 +3,9 @@ package com.fdorval.simpleapp.demo.rest.util;
 import com.fdorval.simpleapp.demo.rest.dto.CoolResult;
 import org.springframework.stereotype.Repository;
 
+/**
+ * là où on fait le calcul scientifique de coolitude
+ */
 @Repository
 public class CoolCalculator {
     public CoolResult getCoolScore(String name){

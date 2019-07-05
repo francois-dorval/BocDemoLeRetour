@@ -14,7 +14,9 @@ const vm = new Vue({
             axios.get(url + "?name=" + this.prenom).then(response => {
                 this.result = response.data;
         }).catch(error => {
-                alert(error.response.data.message)
+            console.log(error.response)
+
+                alert(error.response.data)
         });
         }
     }

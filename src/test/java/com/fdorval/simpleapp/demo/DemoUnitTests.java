@@ -9,9 +9,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+/**
+ * test unitaire bête et méchant
+ */
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class DemoApplicationTests {
+public class DemoUnitTests {
 
 	@Autowired
 	CoolCalculator coolCalculator;
@@ -20,6 +23,7 @@ public class DemoApplicationTests {
 	public void test1() {
 		CoolResult result = coolCalculator.getCoolScore("François");
 		Assert.assertEquals(result.getPourcentage(), 150);
+		Assert.assertEquals(result.getCommentaire(), "\uD83D\uDE32\uD83D\uDE32\uD83D\uDE32\uD83D\uDE32");
 	}
 
 }
