@@ -22,7 +22,7 @@ public class DemoUnitTests {
 	@Test
 	public void test1() {
 		CoolResult result = coolCalculator.getCoolScore("François");
-		Assert.assertEquals(result.getPourcentage(), 150);
+		Assert.assertEquals(result.getPourcentage(), 1);
 		Assert.assertEquals(result.getCommentaire(), "\uD83D\uDE32\uD83D\uDE32\uD83D\uDE32\uD83D\uDE32");
 	}
 
